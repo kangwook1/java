@@ -15,7 +15,7 @@
 
 우선 예상 그래프를 y=ax로 놓았다. 그후 유전자 알고리즘을 이용해  최소의 MSE를 갖는 기울기 a를 찾았다.
 
-![image-20200625194217697](C:\Users\rkddn\AppData\Roaming\Typora\typora-user-images\image-20200625194217697.png)
+![image](https://user-images.githubusercontent.com/62889359/85706763-7dc1aa00-b71d-11ea-99e0-6bf02be068be.png)
 
 위 모형은 예상 그래프와 실제 데이터의 산점도이다.
 
