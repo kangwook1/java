@@ -8,7 +8,7 @@ public class 기말과제 {
 		int mse = 0;
 		int j=i;
 		for(i=0;i<x.length;i++) {
-			py[i]= (a[i]*x[j])-b[i];
+			py[i]= (a[i]*x[j])-b[i]; // 예상 y(ax)값 - 실제 y값
 			py[i]= py[i]*py[i];
 			mse += py[i];
 		}
@@ -111,7 +111,7 @@ public static int[] mutation(String[] cx) {
 }
 
    public static void main(String[] args) {
-	int[] x= init(); // y=ax의 기울기
+	int[] x= init(); // y=ax의 기울기(a)
 	int[] a= {57,59,60,61,63,64,66,67}; //데이터(몸무게)
 	int[] b= {167,169,171,173,175,177,179,181}; //데이터(키)
 	int[] py= new int[8];
@@ -124,18 +124,18 @@ public static int[] mutation(String[] cx) {
 	 int[] mx= mutation(cx);
 	
 	 for(int k=0;k<x.length;k++) {
-		 System.out.printf("%5d ", mx[k]);
+		 System.out.printf("%5d ", mx[k]); //a값 출력
 	 }
 	 System.out.println();
 	 int[] f= new int[mx.length];
 	 for(int j=0; j<mx.length;j++) {
 		 f[j]=fx(j,mx,a,b,py);
-		 System.out.printf("%d ", f[j]);
+		 System.out.printf("%d ", f[j]); // 각각의 a값에 따른 mse 출력
 		 min = Math.min(min, f[j]);
 	 }
 	
 	System.out.println();
-	System.out.println(min);
+	System.out.println(min); // mse의 최소값 출력
 	}	
 	
 }
